@@ -1,0 +1,8 @@
+fastapi
+SpeechRecognition
+uvicorn
+python-dotenv
+python-multipart
+pyttsx3
+google-generativeai
+aiofiles

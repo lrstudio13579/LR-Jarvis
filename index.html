@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis – AI Voice Companion</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <main class="page">
+        <section class="hero">
+            <aside class="persona-panel">
+                <div class="persona-orb" id="personaOrb">
+                    <div class="orb-ring ring-one"></div>
+                    <div class="orb-ring ring-two"></div>
+                    <div class="orb-ring ring-three"></div>
+                    <div class="orb-core">
+                        <span class="orb-eyes"></span>
+                    </div>
+                </div>
+                <p class="status-text" id="statusText">Jarvis is standing by. Tap when you’re ready.</p>
+            </aside>
+
+            <section class="console">
+                <article class="capture-card">
+                    <div class="meter">
+                        <div class="meter-bar" id="meterBar"></div>
+                    </div>
+                    <button class="speak-button" id="speakButton">
+                        <span class="icon">🎙️</span>
+                        <span class="label">Press & Hold to Speak</span>
+                    </button>
+                </article>
+
+                <article class="transcript-panel" id="transcriptPanel"></article>
+
+                <nav class="controls">
+                    <button class="control-button" id="replayButton" disabled>🔄 Replay</button>
+                    <button class="control-button" id="voiceButton" disabled>🎚 Voice</button>
+                    <button class="control-button" id="shareButton" disabled>✨ Share</button>
+                </nav>
+            </section>
+        </section>
+
+        <section class="info-band">
+            <div class="info-card info-card--wide">
+                <h3>Voice Styles</h3>
+                <div class="style-deck">
+                    <button class="style-pill">Strategic</button>
+                    <button class="style-pill">Confident</button>
+                    <button class="style-pill">Warm</button>
+                    <button class="style-pill">Analytical</button>
+                </div>
+            </div>
+            <div class="info-card">
+                <h3>How Jarvis Responds</h3>
+                <ol class="steps">
+                    <li>Your voice is captured instantly</li>
+                    <li>Faster-Whisper parses every word</li>
+                    <li>Gemini crafts insight; Jarvis speaks it back</li>
+                </ol>
+            </div>
+            <div class="info-card">
+                <h3>Privacy Assurance</h3>
+                <p>Jarvis handles conversations securely. Audio is processed on-demand and never stored.</p>
+            </div>
+        </section>
+    </main>
+
+    <audio id="responseAudio" preload="auto" class="sr-only"></audio>
+    <script src="/static/script.js"></script>
+</body>
+</html>
